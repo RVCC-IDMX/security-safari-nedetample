@@ -222,20 +222,51 @@ Brief overview of findings
 
 ## Findings
 
-### Finding 1: [Title]
 
-- **Severity:** Critical/High/Medium/Low
-- **Location:** file:line
-- **Description:** What the vulnerability is
-- **Impact:** What an attacker could do
-- **Recommendation:** How to fix it
++ ### Finding 1: Outdated dependency
++ 
++ - **Severity:** Medium
++ - **Location:** package.json:19
++ - **Description:** The project depends on an outdated Vite/esbuild version with known dev server risks.
++ - **Impact:** An attacker could read responses from the dev server in some scenarios.
++ - **Recommendation:** Run npm audit and update dependencies (npm audit fix --force).
++ 
++ ### Finding 2: Hardcoded API key in source
++ 
++ - **Severity:** High
++ - **Location:** config.js:3
++ - **Description:** An API key was hardcoded in the client source code.
++ - **Impact:** Anyone with repo access can use the key and it remains in history.
++ - **Recommendation:** Move to .env with VITE_ vars, keep .env in .gitignore, rotate the key.
++ 
++ ### Finding 3: Secret in git history
++ 
++ - **Severity:** High
++ - **Location:** git history (commit 1630a0d0e07ed47b311d7c799d2a26f17c90e65b, .env)
++ - **Description:** A .env file with a secret was committed and later deleted but remains accessible in history.
++ - **Impact:** Anyone can retrieve the secret from git history.
++ - **Recommendation:** Rotate the key and purge history with filter-repo/BFG, then force-push.
++ 
++ ### Finding 4: XSS via innerHTML
++ 
++ - **Severity:** High
++ - **Location:** index.js:5
++ - **Description:** User input was rendered with innerHTML without sanitization.
++ - **Impact:** Attacker can inject and execute arbitrary JavaScript in the browser.
++ - **Recommendation:** Use textContent or a proper sanitizer for trusted HTML.
++ 
++ ### Finding 5: Code injection via eval
++ 
++ - **Severity:** High
++ - **Location:** index.js:9
++ - **Description:** User-supplied expressions were executed with eval.
++ - **Impact:** Attacker can execute arbitrary JavaScript in the page context.
++ - **Recommendation:** Replace eval with a safe math-only parser or strict whitelist.
 
-[Repeat for each finding]
 
 ## Remediation priority
 
-Which fixes are most urgent and why
-```
+The high priority fixes are most urgent because they pose the most riisk from attackers.
 
 ## Next steps
 
