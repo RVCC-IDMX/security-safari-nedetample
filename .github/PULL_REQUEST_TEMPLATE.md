@@ -1,18 +1,18 @@
 # Vulnerability fixed
 
-Secret in History
+XSS vulnerability
 
 ## Where was it?
 
-Agent helped me find it in github history.
+It was in index.js at line 5.
 
 ## Why is it dangerous?
 
-Anyone could access it by calling up git show "commit that added it" and then have access to the .env file that was supposed to be deleted.
+Any attackers can execute malicous code entered into the poll.
 
 ## How did you fix it?
 
-To fix this I would have to either or both invalidate the exposed data, in this case the API key and rotate the project.
+I fixed this by changing innerHTML to textContent.
 
 ## Screenshots (optional)
 
