@@ -1,18 +1,18 @@
-## Vulnerability fixed
+# Vulnerability fixed
 
-Outdated dependecy
+Hardcoded secret
 
 ## Where was it?
 
-I found the vulnerability in the terminal but it was located in package-lock.json at lines 2021-2028
+I found the vulnerability in config.js.
 
 ## Why is it dangerous?
 
-This vulnerability would allow an attacker to make requests to the local esbuild dev server and then read the responses.
+Anyone with access to the repository could use it to access sensitive information or act as me.
 
 ## How did you fix it?
 
-I fixed it by running npm audit fix --force. This is secure becasue it has now updated esbuild to a version where that vulnerability has been found and fixed.
+I fixed it by creating a .env file and moving the keys there and confirming the .env file was in .gitignore.
 
 ## Screenshots (optional)
 

@@ -1,4 +1,4 @@
-import { API_KEY } from "./config.js";
+import { VITE_API_KEY } from "./config.js";
 
 // VULNERABILITY: innerHTML with user input
 function displayMessage(userInput) {

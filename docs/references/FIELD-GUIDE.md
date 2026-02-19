@@ -94,10 +94,10 @@ Or ask your AI spotter (see [SPOTTER-TIPS.md](SPOTTER-TIPS.md)):
 
 **Document your finding:**
 
-- Where is the secret located?
-- What kind of secret is it?
-- Why is this dangerous?
-- How should secrets be handled instead?
+- Where is the secret located? config.js
+- What kind of secret is it? It's an API key
+- Why is this dangerous? Anyone with access to the repository could use it to access sensitive information or act as me.
+- How should secrets be handled instead? They should be put in enviroment labels.
 
 ## Hunt 3: secrets in git history
 
