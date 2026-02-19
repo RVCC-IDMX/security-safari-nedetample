@@ -204,10 +204,10 @@ document.body.innerHTML = "Hacked!";
 
 **Document your finding:**
 
-- What file and line number contains the vulnerability?
-- What allows the code injection?
-- What's the worst an attacker could do?
-- How would you fix it safely?
+- What file and line number contains the vulnerability? The vulnerability was in index.js
+- What allows the code injection? the eval() function
+- What's the worst an attacker could do? An attacker could steal data from local storage, such as passwords.
+- How would you fix it safely? I had Agent create a safe calculator that confirms that the characters inputted are only numerical characters.
 
 ## Writing your report
 

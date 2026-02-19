@@ -1,18 +1,18 @@
 # Vulnerability fixed
 
-XSS vulnerability
+Eval injection
 
 ## Where was it?
 
-It was in index.js at line 5.
+It was in index.js at line 9.
 
 ## Why is it dangerous?
 
-Any attackers can execute malicous code entered into the poll.
+Any attackers can access data stored in local Storage.
 
 ## How did you fix it?
 
-I fixed this by changing innerHTML to textContent.
+I had AGent create a safe calculator that confirmed it was working with numbers and operations before evaluating.
 
 ## Screenshots (optional)
 
