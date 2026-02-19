@@ -165,10 +165,10 @@ If an alert pops up, you've confirmed the XSS vulnerability.
 
 **Document your finding:**
 
-- What file and line number contains the vulnerability?
-- How does user input reach the vulnerable code?
-- What could an attacker do with this?
-- How would you fix it?
+- What file and line number contains the vulnerability? It was in index.js on line 5
+- How does user input reach the vulnerable code? It goes through the lines 14-17 which calls displayMessage() at the end.
+- What could an attacker do with this? The attacker can use any HTML or Javascript code to make the sytem execute it.
+- How would you fix it? You fix this by changing innerHTML to textContent.
 
 ## Hunt 5: code injection
 

@@ -2,7 +2,7 @@ import { VITE_API_KEY } from "./config.js";
 
 // VULNERABILITY: innerHTML with user input
 function displayMessage(userInput) {
-  document.getElementById("output").innerHTML = userInput;
+  document.getElementById("output").textContent = userInput;
 }
 
 // VULNERABILITY: eval with user input
