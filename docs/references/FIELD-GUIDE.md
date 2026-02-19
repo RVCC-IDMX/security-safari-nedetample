@@ -127,10 +127,10 @@ Or ask your AI spotter:
 
 **Document your finding:**
 
-- What file contained the secret?
-- What commit added it? What commit "deleted" it?
-- How can you still access it?
-- How should this have been handled?
+- What file contained the secret? .env
+- What commit added it? What commit "deleted" it? 1630a0d0e07ed47b311d7c799d2a26f17c90e65b added it, c401615615e956f6348f84952faa199790b9aa01 deleted it.
+- How can you still access it? Anyone can access it by calling git show "commit that added it"
+- How should this have been handled? .env shouldn't have been added to begin with.
 
 ## Hunt 4: XSS vulnerabilities
 

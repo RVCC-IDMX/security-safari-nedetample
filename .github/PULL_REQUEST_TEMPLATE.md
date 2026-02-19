@@ -1,18 +1,18 @@
 # Vulnerability fixed
 
-Hardcoded secret
+Secret in History
 
 ## Where was it?
 
-I found the vulnerability in config.js.
+Agent helped me find it in github history.
 
 ## Why is it dangerous?
 
-Anyone with access to the repository could use it to access sensitive information or act as me.
+Anyone could access it by calling up git show "commit that added it" and then have access to the .env file that was supposed to be deleted.
 
 ## How did you fix it?
 
-I fixed it by creating a .env file and moving the keys there and confirming the .env file was in .gitignore.
+To fix this I would have to either or both invalidate the exposed data, in this case the API key and rotate the project.
 
 ## Screenshots (optional)
 
@@ -21,5 +21,5 @@ I fixed it by creating a .env file and moving the keys there and confirming the 
 
 ## Checklist
 
-- [ X ] Tested the fix locally with `npm run dev`
-- [ X ] Commit message clearly describes the security fix
+- [  ] Tested the fix locally with `npm run dev`
+- [  ] Commit message clearly describes the security fix
