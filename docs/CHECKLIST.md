@@ -4,10 +4,10 @@ Track your progress through the hunt.
 
 ## Setup
 
-- [ ] Cloned the repository
-- [ ] Ran `npm install`
-- [ ] Ran `npm run dev` and verified the app works
-- [ ] Read through the docs in this folder
+- [ X ] Cloned the repository
+- [ X  ] Ran `npm install`
+- [ X  ] Ran `npm run dev` and verified the app works
+- [ X  ] Read through the docs in this folder
 
 ## The Big Five
 

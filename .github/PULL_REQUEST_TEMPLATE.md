@@ -1,18 +1,18 @@
 ## Vulnerability fixed
 
-<!-- What type of vulnerability is this? (e.g., XSS, code injection, hardcoded secret) -->
+Outdated dependecy
 
 ## Where was it?
 
-<!-- File path and line number where you found it -->
+I found the vulnerability in the terminal but it was located in package-lock.json at lines 2021-2028
 
 ## Why is it dangerous?
 
-<!-- Explain what an attacker could do with this vulnerability -->
+This vulnerability would allow an attacker to make requests to the local esbuild dev server and then read the responses.
 
 ## How did you fix it?
 
-<!-- Describe your fix and why it's secure -->
+I fixed it by running npm audit fix --force. This is secure becasue it has now updated esbuild to a version where that vulnerability has been found and fixed.
 
 ## Screenshots (optional)
 
@@ -21,5 +21,5 @@
 
 ## Checklist
 
-- [ ] Tested the fix locally with `npm run dev`
-- [ ] Commit message clearly describes the security fix
+- [ X ] Tested the fix locally with `npm run dev`
+- [ X ] Commit message clearly describes the security fix

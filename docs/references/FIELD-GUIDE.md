@@ -64,10 +64,10 @@ This command checks your `package.json` dependencies against a database of known
 
 **Document your finding:**
 
-- What package is vulnerable?
-- What is the CVE number?
-- What does the vulnerability allow an attacker to do?
-- How would you fix it?
+- What package is vulnerable? esbuild
+- What is the CVE number? None
+- What does the vulnerability allow an attacker to do? "esbuild enables any website to send any requests to the development server and read the response"
+- How would you fix it? By running npm audit fix --force in the terminal
 
 ## Hunt 2: hardcoded secrets
 
