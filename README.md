@@ -1,6 +1,5 @@
-# Security Safari
-
-A security audit training exercise. Hunt for intentionally planted vulnerabilities in a web application.
+# Quick Poll and Calculator
+A quick poll about programming languages and math.
 
 ## Quick start
 
@@ -29,10 +28,17 @@ Need help? These tutorials explain the tools. You can also ask your AI assistant
 - [docs/tutorials/tailwind-css.md](docs/tutorials/tailwind-css.md) - How Tailwind utility classes work
 - [docs/tutorials/yaml-toml-files.md](docs/tutorials/yaml-toml-files.md) - Reading YAML and TOML config files
 
-## Safety note
-
-This project is intentionally vulnerable for educational purposes. All vulnerabilities are harmless — see [docs/SAFETY.md](docs/SAFETY.md) for details.
 
 ## License
 
 MIT License - Cynthia Teeters
+
+## Badges
+
+![Dependencies](https://img.shields.io/badge/✓_Dependencies-Fixed-228B22)
+![Secrets](https://img.shields.io/badge/✓_Secrets-Removed-228B22)
+![Git History](https://img.shields.io/badge/✓_Git_History-Cleaned-228B22)
+![XSS](https://img.shields.io/badge/✓_XSS-Patched-228B22)
+![Code Injection](<https://img.shields.io/badge/✓_eval()-Secured-228B22>)
+
+![Big Five](https://img.shields.io/badge/🏆_Big_Five-Complete!-gold)
