@@ -1,18 +1,18 @@
-# Vulnerability fixed
+## Vulnerability fixed
 
-Eval injection
+<!-- What type of vulnerability is this? (e.g., XSS, code injection, hardcoded secret) -->
 
 ## Where was it?
 
-It was in index.js at line 9.
+<!-- File path and line number where you found it -->
 
 ## Why is it dangerous?
 
-Any attackers can access data stored in local Storage.
+<!-- Explain what an attacker could do with this vulnerability -->
 
 ## How did you fix it?
 
-I had AGent create a safe calculator that confirmed it was working with numbers and operations before evaluating.
+<!-- Describe your fix and why it's secure -->
 
 ## Screenshots (optional)
 
@@ -21,5 +21,5 @@ I had AGent create a safe calculator that confirmed it was working with numbers 
 
 ## Checklist
 
-- [  ] Tested the fix locally with `npm run dev`
-- [  ] Commit message clearly describes the security fix
+- [ ] Tested the fix locally with `npm run dev`
+- [ ] Commit message clearly describes the security fix
